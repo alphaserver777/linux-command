@@ -35,9 +35,9 @@ sudo - это утилита, позволяющая выполнить кома
 Если надоело `sudo` вводить можно авторизоваться под рутом, нл так лучше не делать:
 
 ```
-sergey@sergey-pc:~$ sudo -i
-[sudo] password for sergey: 
-root@sergey-pc:~# 
+ilya@ilya-pc:~$ sudo -i
+[sudo] password for ilya: 
+root@ilya-pc:~# 
 ```
 
 Либо можно использовать `sudo -s` или `sudo su`.
