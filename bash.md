@@ -1632,3 +1632,12 @@ echo 1 > /sys/devices/pci0000:00/0000:00:02.0/rom
 cat /sys/devices/pci0000:00/0000:00:02.0/rom > vbios.dump
 echo 0 > /sys/devices/pci0000:00/0000:00:02.0/rom
 ```
+
+# Основные способы смены hostname:
+
+Способ 1: Использование hostnamectl (рекомендуется)
+Введите команду: sudo hostnamectl set-hostname имя_нового_хоста.
+Проверьте изменения: hostnamectl.
+Способ 2: Редактирование файлов вручную
+Откройте файл /etc/hostname: sudo nano /etc/hostname, удалите старое имя и впишите новое.
+Откройте файл /etc/hosts: sudo nano /etc/hosts, замените старое имя хоста на новое в строке 127.0.1.1.
